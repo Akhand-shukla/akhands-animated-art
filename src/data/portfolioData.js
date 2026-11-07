@@ -58,7 +58,7 @@ export const PROJECTS = [
     subtitle: "AI-Powered Groundwater Contamination Platform",
     tagline: "Environmental Intelligence & Geospatial Analytics",
     highlight: "Smart India Hackathon (SIH) 2026 Shortlisted",
-    badgeColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/30",
+    badgeColor: "bg-[#f43f5e]/15 text-[#fb7185] border-[#f43f5e]/35",
     techStack: ["React.js", "FastAPI", "Python", "GenAI", "RAG", "Docker", "Geospatial GIS"],
     bullets: [
       "Engineered an environmental intelligence platform converting raw groundwater quality datasets into real-time contamination insights and automated hazard alerts.",
@@ -74,7 +74,7 @@ export const PROJECTS = [
     subtitle: "Civic Demand Intelligence Platform",
     tagline: "Multimodal Voice & Vision for Urban Governance",
     highlight: "4th Place — GDG Indore Hackathon 2026",
-    badgeColor: "bg-amber-500/10 text-amber-400 border-amber-500/30",
+    badgeColor: "bg-[#f43f5e]/15 text-[#fb7185] border-[#f43f5e]/35",
     techStack: ["FastAPI", "Python", "Google Gemini Multimodal API", "Firebase", "Leaflet.js", "React.js", "Tailwind CSS"],
     bullets: [
       "Built an intelligent civic demand platform for GDG Indore Hackathon (4th Place) transforming citizen voice audio, photos, and complaints into standardized ward priorities.",
@@ -90,7 +90,7 @@ export const PROJECTS = [
     subtitle: "AI Legal Contract Analysis Platform",
     tagline: "Automated Commercial Contract Liability & Risk Intelligence",
     highlight: "Enterprise Legal Tech Solution",
-    badgeColor: "bg-sky-500/10 text-sky-400 border-sky-500/30",
+    badgeColor: "bg-[#f43f5e]/15 text-[#fb7185] border-[#f43f5e]/35",
     techStack: ["FastAPI", "Python", "Firebase", "Docker", "GenAI", "Pydantic", "HTTPX", "Uvicorn"],
     bullets: [
       "Developed an automated legal intelligence platform analyzing uploaded commercial contracts, clauses, and legal agreements for hidden liabilities and compliance risks.",
@@ -106,7 +106,7 @@ export const PROJECTS = [
     subtitle: "AI Revenue Recovery Engine",
     tagline: "Autonomous Payment Recovery with HMAC Webhooks & GenAI",
     highlight: "Autonomous Fintech Agent",
-    badgeColor: "bg-rose-500/10 text-rose-400 border-rose-500/30",
+    badgeColor: "bg-[#f43f5e]/15 text-[#fb7185] border-[#f43f5e]/35",
     techStack: ["React.js", "GSAP", "Lenis", "FastAPI", "Python", "Gemini API", "Agentic AI", "HMAC SHA-256", "Tailwind CSS"],
     bullets: [
       "Engineered an autonomous payment failure recovery platform intercepting failed Razorpay transactions via HMAC-verified webhooks to recover lost merchant revenue.",
@@ -123,7 +123,7 @@ export const PROJECTS = [
     subtitle: "Dual-LLM Agentic Battle Arena",
     tagline: "Competitive Prompting Duels with LangGraph State Machines",
     highlight: "Agentic State Machine Arena",
-    badgeColor: "bg-purple-500/10 text-purple-400 border-purple-500/30",
+    badgeColor: "bg-[#f43f5e]/15 text-[#fb7185] border-[#f43f5e]/35",
     techStack: ["Python", "React.js", "LangChain", "LangGraph", "Agentic AI", "Groq API", "Gemini API", "Tailwind CSS", "Vite"],
     bullets: [
       "Built an interactive agentic arena pitting autonomous LLM models against each other in competitive prompting duels using LangGraph state machines.",

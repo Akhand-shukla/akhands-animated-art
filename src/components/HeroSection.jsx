@@ -134,7 +134,8 @@ export default function HeroSection({ onOpenResume }) {
 
             {/* Stage 3: National Hackathons & Platforms (0.68 to 0.96) */}
             <div style={getStageStyle(0.68, 0.96)} className="absolute bottom-0 left-0 right-0">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 font-mono text-xs uppercase tracking-widest mb-3">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#f43f5e]/15 border border-[#f43f5e]/30 text-[#f43f5e] font-mono text-xs uppercase tracking-widest mb-3">
+                <span className="h-1.5 w-1.5 rounded-full bg-[#f43f5e] animate-pulse" />
                 <span>03 — Proven Track Record</span>
               </div>
               <h2 className="font-display text-5xl sm:text-7xl md:text-9xl tracking-tight text-white font-bold leading-none glow-text">

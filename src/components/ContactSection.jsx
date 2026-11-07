@@ -72,7 +72,7 @@ export default function ContactSection({ onOpenResume }) {
                     className="p-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-neutral-400 hover:text-white transition-colors"
                     title="Copy Email"
                   >
-                    {copied ? <Check className="h-3.5 w-3.5 text-emerald-400" /> : <Copy className="h-3.5 w-3.5" />}
+                    {copied ? <Check className="h-3.5 w-3.5 text-[#f43f5e]" /> : <Copy className="h-3.5 w-3.5" />}
                   </button>
                 </div>
 
@@ -133,8 +133,8 @@ export default function ContactSection({ onOpenResume }) {
               </h3>
 
               {formSubmitted ? (
-                <div className="p-6 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-center space-y-2">
-                  <div className="inline-flex p-2 rounded-full bg-emerald-500/20 text-emerald-400 mb-1">
+                <div className="p-6 rounded-xl bg-[#f43f5e]/15 border border-[#f43f5e]/35 text-center space-y-2">
+                  <div className="inline-flex p-2 rounded-full bg-[#f43f5e]/20 text-[#f43f5e] mb-1">
                     <Check className="h-5 w-5" />
                   </div>
                   <h4 className="text-sm font-bold text-white font-mono">Message Received</h4>
