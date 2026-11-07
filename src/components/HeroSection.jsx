@@ -114,20 +114,21 @@ export default function HeroSection({ onOpenResume }) {
 
             {/* Stage 2: The Craft & Agentic AI (0.34 to 0.62) */}
             <div style={getStageStyle(0.34, 0.62)} className="absolute bottom-0 left-0 right-0">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-400 font-mono text-xs uppercase tracking-widest mb-3">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#f43f5e]/15 border border-[#f43f5e]/30 text-[#f43f5e] font-mono text-xs uppercase tracking-widest mb-3">
+                <span className="h-1.5 w-1.5 rounded-full bg-[#f43f5e] animate-pulse" />
                 <span>02 — Autonomous Systems</span>
               </div>
               <h2 className="font-display text-5xl sm:text-7xl md:text-9xl tracking-tight text-white font-bold leading-none glow-text">
-                AGENTIC GENAI
+                <span className="text-[#f43f5e] drop-shadow-[0_0_50px_rgba(244,63,94,0.75)]">AUTONOMOUS</span> SYSTEMS
               </h2>
               <p className="mt-4 max-w-xl text-sm sm:text-base md:text-lg text-neutral-300 font-body leading-relaxed">
                 LangGraph state machine duels, real-time Gemini multimodal Hinglish transcription, RAG environmental intelligence, and cryptographic audit ledgers.
               </p>
               <div className="mt-5 flex flex-wrap gap-2 text-xs font-mono text-neutral-400">
-                <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">LangGraph</span>
+                <span className="px-3 py-1 rounded-full bg-[#f43f5e]/10 border border-[#f43f5e]/25 text-[#f43f5e]">LangGraph</span>
                 <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">FastAPI</span>
                 <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">Gemini 2.5</span>
-                <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">Docker</span>
+                <span className="px-3 py-1 rounded-full bg-[#f43f5e]/10 border border-[#f43f5e]/25 text-[#f43f5e]">Docker</span>
               </div>
             </div>
 

@@ -38,16 +38,16 @@ export default function SkillsSection() {
             </p>
           </div>
 
-          {/* Category Filter Pills */}
-          <div className="flex flex-wrap gap-2">
+          {/* Category Filter Pills (Liquid Glass Tab Dock) */}
+          <div className="flex flex-wrap gap-1.5 p-1.5 rounded-2xl md:rounded-full bg-[#0c1220]/85 backdrop-blur-2xl border border-white/[0.08] border-t-[#f43f5e]/30 shadow-[inset_0_1px_2px_rgba(0,0,0,0.8),0_10px_25px_rgba(0,0,0,0.6)]">
             {categories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`px-3 py-1.5 rounded-full text-xs font-mono transition-all ${
+                className={`px-3.5 py-1.5 rounded-full text-xs font-mono transition-all duration-300 ${
                   activeCategory === cat
-                    ? "bg-[#f43f5e] text-white shadow-lg shadow-[#f43f5e]/30 scale-105"
-                    : "bg-white/5 hover:bg-white/10 text-neutral-400 hover:text-white border border-white/5"
+                    ? "bg-gradient-to-r from-[#f43f5e] to-[#e11d48] text-white font-bold shadow-[0_0_20px_rgba(244,63,94,0.5),inset_0_1px_1px_rgba(255,255,255,0.4)] scale-105"
+                    : "text-neutral-400 hover:text-white hover:bg-white/[0.06]"
                 }`}
               >
                 {cat}
