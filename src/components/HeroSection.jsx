@@ -67,15 +67,15 @@ export default function HeroSection({ onOpenResume }) {
   };
 
   return (
-    <section ref={containerRef} id="top" className="relative h-[350vh] bg-[#070b12]">
+    <section ref={containerRef} id="top" className="relative h-[350vh] bg-[#080406]">
       {/* Sticky Fullscreen Canvas Viewport */}
       <div className="sticky top-0 h-screen w-full overflow-hidden">
         {/* Render the 240-frame Canvas */}
         <CinematicCanvas scrollProgress={scrollProgress} />
 
         {/* Cinematic Vignette & Ambient Radial Glows */}
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#070b12] via-transparent to-[#070b12]/60" />
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_30%,#070b12_95%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#080406] via-transparent to-[#080406]/60" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_30%,#080406_95%)]" />
         <div className="pointer-events-none absolute inset-0 scanlines opacity-40" />
 
         {/* Captions Overlay Container */}
@@ -155,14 +155,6 @@ export default function HeroSection({ onOpenResume }) {
             </div>
 
           </div>
-        </div>
-
-        {/* Scroll Progress Bar at Top */}
-        <div className="pointer-events-none absolute top-0 left-0 right-0 h-[2px] bg-white/10 z-30">
-          <div
-            className="h-full bg-gradient-to-r from-[#f43f5e] to-amber-500 transition-all duration-75"
-            style={{ width: `${scrollProgress * 100}%` }}
-          />
         </div>
 
         {/* Floating Scroll Cue */}

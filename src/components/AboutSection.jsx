@@ -4,10 +4,10 @@ import { Award, CheckCircle, Code2, Cpu, Globe2, ShieldCheck, FileText } from 'l
 
 export default function AboutSection({ onOpenResume }) {
   return (
-    <section id="about" className="relative py-28 border-t border-white/10 bg-[#070b12] overflow-hidden">
+    <section id="about" className="relative py-28 border-t border-[#f43f5e]/20 bg-[#080406] overflow-hidden">
       {/* Background glow highlights */}
-      <div className="pointer-events-none absolute top-1/4 -left-40 h-96 w-96 rounded-full bg-[#f43f5e]/10 blur-3xl" />
-      <div className="pointer-events-none absolute bottom-1/4 -right-40 h-96 w-96 rounded-full bg-amber-500/10 blur-3xl" />
+      <div className="pointer-events-none absolute top-1/4 -left-40 h-96 w-96 rounded-full bg-[#f43f5e]/15 blur-3xl" />
+      <div className="pointer-events-none absolute bottom-1/4 -right-40 h-96 w-96 rounded-full bg-[#be123c]/15 blur-3xl" />
 
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         {/* Section Header */}

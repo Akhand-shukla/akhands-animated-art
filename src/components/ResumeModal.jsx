@@ -13,11 +13,11 @@ export default function ResumeModal({ isOpen, onClose }) {
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-6 bg-black/85 backdrop-blur-xl animate-fade-in">
       {/* Container */}
       <div 
-        className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-[#0a0f1d] border border-white/10 rounded-2xl shadow-2xl p-6 md:p-10 text-[#f1f5f9]"
+        className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-[#0e0508] border border-[#f43f5e]/25 rounded-2xl shadow-2xl p-6 md:p-10 text-[#f8fafc]"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Top Floating Control Bar */}
-        <div className="sticky -top-6 -mx-6 -mt-6 mb-6 px-6 py-4 bg-[#0a0f1d]/95 backdrop-blur-md border-b border-white/10 flex items-center justify-between z-30">
+        <div className="sticky -top-6 -mx-6 -mt-6 mb-6 px-6 py-4 bg-[#0e0508]/95 backdrop-blur-md border-b border-[#f43f5e]/20 flex items-center justify-between z-30">
           <div className="flex items-center gap-3">
             <span className="h-2 w-2 rounded-full bg-[#f43f5e] animate-pulse" />
             <span className="font-mono text-xs uppercase tracking-widest text-neutral-400">Official Curriculum Vitae</span>

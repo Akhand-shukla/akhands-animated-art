@@ -23,7 +23,7 @@ export default function FloatingDock({ activeSection, onOpenResume }) {
     <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 select-none">
       <nav 
         aria-label="Floating quick navigation"
-        className="flex items-center gap-1 p-1.5 rounded-full bg-[#070b12]/85 backdrop-blur-2xl border border-white/[0.08] border-t-[#f43f5e]/40 shadow-[0_20px_50px_rgba(0,0,0,0.85),0_0_30px_rgba(244,63,94,0.18)]"
+        className="flex items-center gap-1 p-1.5 rounded-full bg-[#14060a]/90 backdrop-blur-3xl border border-[#f43f5e]/25 border-t-[#f43f5e]/50 shadow-[0_20px_50px_rgba(0,0,0,0.95),0_0_35px_rgba(244,63,94,0.3)]"
       >
         {dockItems.map((item) => {
           const Icon = item.icon;
@@ -35,7 +35,7 @@ export default function FloatingDock({ activeSection, onOpenResume }) {
               onClick={(e) => handleNavClick(e, item.id)}
               className={`relative flex items-center gap-1.5 px-3 py-1.5 rounded-full font-mono text-[11px] uppercase tracking-wider transition-all duration-300 ${
                 isActive
-                  ? "bg-gradient-to-r from-[#f43f5e] to-[#e11d48] text-white font-bold shadow-[0_0_20px_rgba(244,63,94,0.5),inset_0_1px_1px_rgba(255,255,255,0.4)] scale-105"
+                  ? "bg-gradient-to-r from-[#f43f5e] via-[#e11d48] to-[#be123c] text-white font-bold shadow-[0_0_25px_rgba(244,63,94,0.6),inset_0_1px_1px_rgba(255,255,255,0.4)] scale-105"
                   : "text-neutral-400 hover:text-white hover:bg-white/[0.06]"
               }`}
             >

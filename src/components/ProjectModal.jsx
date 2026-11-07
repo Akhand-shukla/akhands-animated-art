@@ -7,7 +7,7 @@ export default function ProjectModal({ project, onClose }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-6 bg-black/85 backdrop-blur-xl animate-fade-in">
       <div 
-        className="relative w-full max-w-2xl bg-[#0a0f1d] border border-white/10 rounded-2xl shadow-2xl p-6 md:p-8 text-[#f1f5f9] overflow-hidden"
+        className="relative w-full max-w-2xl bg-[#0e0508] border border-[#f43f5e]/25 rounded-2xl shadow-2xl p-6 md:p-8 text-[#f8fafc] overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Glow Header */}

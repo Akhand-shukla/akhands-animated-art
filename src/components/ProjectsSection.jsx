@@ -4,9 +4,9 @@ import { ArrowUpRight, Github, Sparkles, Terminal, CheckCircle2 } from 'lucide-r
 
 export default function ProjectsSection({ onSelectProject }) {
   return (
-    <section id="work" className="relative py-28 border-t border-white/10 bg-[#070b12] overflow-hidden">
+    <section id="work" className="relative py-28 border-t border-[#f43f5e]/20 bg-[#080406] overflow-hidden">
       {/* Background Glow */}
-      <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[600px] w-[600px] rounded-full bg-[#f43f5e]/5 blur-[140px]" />
+      <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[600px] w-[600px] rounded-full bg-[#f43f5e]/12 blur-[140px]" />
 
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         {/* Section Header */}

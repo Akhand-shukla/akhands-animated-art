@@ -66,7 +66,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#070b12] text-[#f1f5f9] selection:bg-[#f43f5e] selection:text-white font-body bg-grain">
+    <div className="min-h-screen bg-[#080406] text-[#f8fafc] selection:bg-[#f43f5e] selection:text-white font-body bg-grain">
       {/* Top Fixed Navbar (Above Bar) */}
       <Navbar 
         onOpenResume={() => setIsResumeOpen(true)} 

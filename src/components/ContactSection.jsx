@@ -28,9 +28,9 @@ export default function ContactSection({ onOpenResume }) {
   };
 
   return (
-    <section id="contact" className="relative pt-28 pb-12 border-t border-white/10 bg-[#070b12] overflow-hidden">
+    <section id="contact" className="relative pt-28 pb-12 border-t border-[#f43f5e]/20 bg-[#080406] overflow-hidden">
       {/* Background Glow */}
-      <div className="pointer-events-none absolute bottom-0 left-1/2 -translate-x-1/2 h-80 w-full max-w-4xl bg-[#f43f5e]/10 blur-[130px]" />
+      <div className="pointer-events-none absolute bottom-0 left-1/2 -translate-x-1/2 h-80 w-full max-w-4xl bg-[#f43f5e]/15 blur-[140px]" />
 
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         {/* Section Header */}

@@ -175,7 +175,7 @@ export default function CinematicCanvas({ scrollProgress }) {
   }, [scrollProgress]);
 
   return (
-    <div className="relative w-full h-full overflow-hidden bg-[#070b12]">
+    <div className="relative w-full h-full overflow-hidden bg-[#080406]">
       <canvas
         ref={canvasRef}
         className="w-full h-full object-cover transition-opacity duration-700 block"

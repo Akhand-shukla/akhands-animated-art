@@ -21,7 +21,7 @@ export default function SkillsSection() {
     : SKILL_CATEGORIES.filter(c => c.title === activeCategory);
 
   return (
-    <section id="skills" className="relative py-28 border-t border-white/10 bg-[#070b12] overflow-hidden">
+    <section id="skills" className="relative py-28 border-t border-[#f43f5e]/20 bg-[#080406] overflow-hidden">
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         {/* Section Header */}
         <div className="flex items-center gap-2 mb-3">
@@ -39,7 +39,7 @@ export default function SkillsSection() {
           </div>
 
           {/* Category Filter Pills (Liquid Glass Tab Dock) */}
-          <div className="flex flex-wrap gap-1.5 p-1.5 rounded-2xl md:rounded-full bg-[#0c1220]/85 backdrop-blur-2xl border border-white/[0.08] border-t-[#f43f5e]/30 shadow-[inset_0_1px_2px_rgba(0,0,0,0.8),0_10px_25px_rgba(0,0,0,0.6)]">
+          <div className="flex flex-wrap gap-1.5 p-1.5 rounded-2xl md:rounded-full bg-[#18090d]/85 backdrop-blur-2xl border border-[#f43f5e]/25 border-t-[#f43f5e]/40 shadow-[inset_0_1px_2px_rgba(0,0,0,0.8),0_10px_25px_rgba(0,0,0,0.8)]">
             {categories.map((cat) => (
               <button
                 key={cat}
@@ -96,7 +96,7 @@ export default function SkillsSection() {
         </div>
 
         {/* Real-World Orchestration Banner */}
-        <div className="mt-12 p-6 rounded-2xl bg-gradient-to-r from-[#f43f5e]/10 via-purple-500/10 to-amber-500/10 border border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="mt-12 p-6 rounded-2xl bg-gradient-to-r from-[#f43f5e]/15 via-[#be123c]/15 to-[#881337]/15 border border-[#f43f5e]/30 flex flex-col md:flex-row items-center justify-between gap-4 shadow-[0_10px_30px_rgba(244,63,94,0.1)]">
           <div className="flex items-center gap-4">
             <div className="h-10 w-10 rounded-full bg-[#f43f5e]/20 border border-[#f43f5e]/40 flex items-center justify-center shrink-0">
               <Cpu className="h-5 w-5 text-[#f43f5e]" />

@@ -4,7 +4,7 @@ import { Award, GraduationCap, Trophy, CheckCircle, ShieldAlert, Sparkles } from
 
 export default function AchievementsSection() {
   return (
-    <section id="achievements" className="relative py-28 border-t border-white/10 bg-[#070b12] overflow-hidden">
+    <section id="achievements" className="relative py-28 border-t border-[#f43f5e]/20 bg-[#080406] overflow-hidden">
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         {/* Section Header */}
         <div className="flex items-center gap-2 mb-3">
@@ -20,11 +20,11 @@ export default function AchievementsSection() {
           {ACHIEVEMENTS.map((item, i) => (
             <div
               key={i}
-              className="liquid-glass p-6 rounded-2xl border border-white/10 hover:border-amber-500/40 transition-all space-y-3"
+              className="liquid-glass p-6 rounded-2xl border border-white/10 hover:border-[#f43f5e]/50 transition-all space-y-3"
             >
               <div className="flex items-start justify-between gap-3">
                 <div className="flex items-center gap-3">
-                  <div className="p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400">
+                  <div className="p-2.5 rounded-xl bg-[#f43f5e]/15 border border-[#f43f5e]/30 text-[#f43f5e]">
                     <Trophy className="h-5 w-5" />
                   </div>
                   <div>
