@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akhand Shukla - Resume | AI & Full-Stack Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --text-main: #0f172a;
+      --text-muted: #334155;
+      --text-light: #64748b;
+      --accent: #1e3a8a;
+      --border-color: #cbd5e1;
+      --tag-bg: #f1f5f9;
+      --line-height: 1.30;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--text-main);
+      background-color: #e2e8f0;
+      line-height: var(--line-height);
+      font-size: 8.7pt;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Print Control Bar */
+    .no-print-bar {
+      max-width: 210mm;
+      margin: 14px auto 0;
+      padding: 10px 16px;
+      background: #0f172a;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 8px;
+      font-size: 13px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .print-btn {
+      background: #2563eb;
+      color: #ffffff;
+      border: none;
+      padding: 7px 16px;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      transition: background 0.15s ease;
+    }
+
+    .print-btn:hover {
+      background: #1d4ed8;
+    }
+
+    /* Page Canvas */
+    .page-container {
+      max-width: 210mm;
+      margin: 12px auto 24px;
+      background: #ffffff;
+      padding: 9.5mm 12.5mm;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      margin-bottom: 7px;
+      border-bottom: 1.5px solid #0f172a;
+      padding-bottom: 5px;
+    }
+
+    h1 {
+      font-size: 18.5pt;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      color: var(--text-main);
+      text-transform: uppercase;
+      line-height: 1.1;
+      margin-bottom: 2px;
+    }
+
+    .role-title {
+      font-size: 9.6pt;
+      font-weight: 600;
+      color: #1d4ed8;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 3.5px;
+    }
+
+    .contact-line {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 5px 9px;
+      font-size: 8.1pt;
+      color: var(--text-muted);
+    }
+
+    .contact-line a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-line a:hover {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+
+    .sep {
+      color: #94a3b8;
+    }
+
+    /* Section Styles */
+    section {
+      margin-bottom: 6px;
+    }
+
+    .section-title {
+      font-size: 9.1pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: #0f172a;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 1.5px;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    p.summary-text {
+      text-align: justify;
+      color: var(--text-muted);
+      font-size: 8.3pt;
+      line-height: 1.27;
+    }
+
+    /* Skills Grid */
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 8.1pt;
+    }
+
+    .skills-table td {
+      padding: 1.1px 0;
+      vertical-align: top;
+    }
+
+    .skills-label {
+      font-weight: 600;
+      color: #0f172a;
+      width: 145px;
+      white-space: nowrap;
+    }
+
+    .skills-value {
+      color: var(--text-muted);
+    }
+
+    /* Projects */
+    .project-item {
+      margin-bottom: 4.5px;
+    }
+
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1px;
+    }
+
+    .project-title {
+      font-size: 8.7pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .project-tech {
+      font-size: 7.9pt;
+      font-weight: 500;
+      color: #2563eb;
+      font-style: italic;
+    }
+
+    ul.clean-list {
+      list-style-type: disc;
+      padding-left: 14px;
+      margin-top: 1px;
+    }
+
+    ul.clean-list li {
+      font-size: 8.05pt;
+      color: var(--text-muted);
+      line-height: 1.25;
+      margin-bottom: 1px;
+      text-align: justify;
+    }
+
+    ul.clean-list li strong {
+      color: #0f172a;
+      font-weight: 600;
+    }
+
+    /* Achievements */
+    .achievement-item {
+      font-size: 8.05pt;
+      color: var(--text-muted);
+      line-height: 1.24;
+      margin-bottom: 1.5px;
+    }
+
+    .achievement-item strong {
+      color: #0f172a;
+    }
+
+    /* Education */
+    .edu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+      font-size: 8.1pt;
+    }
+
+    .edu-degree {
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .edu-school {
+      color: var(--text-muted);
+    }
+
+    .edu-year {
+      font-weight: 600;
+      color: #475569;
+      white-space: nowrap;
+    }
+
+    /* Certifications */
+    .cert-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2.5px 12px;
+      font-size: 7.9pt;
+      color: var(--text-muted);
+      margin-top: 1px;
+    }
+
+    .cert-item strong {
+      color: #0f172a;
+    }
+
+    /* Print Styles */
+    @media print {
+      body {
+        background-color: #ffffff;
+        font-size: 8.5pt;
+      }
+
+      .no-print-bar {
+        display: none !important;
+      }
+
+      .page-container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+      }
+
+      @page {
+        size: A4 portrait;
+        margin: 7.5mm 8.5mm 5.5mm 8.5mm;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top bar with 1-click Print / Save PDF -->
+  <div class="no-print-bar">
+    <div>
+      <strong>Akhand Shukla — Resume Preview</strong> 
+      <span style="opacity: 0.7; font-size: 11px; margin-left: 8px;">(Firebase, Docker, AWS, GenAI, LangChain, LangGraph)</span>
+    </div>
+    <button class="print-btn" onclick="window.print()">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 6 2 18 2 18 9"></polyline>
+        <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+        <rect x="6" y="14" width="12" height="8"></rect>
+      </svg>
+      Print / Save as PDF
+    </button>
+  </div>
+
+  <main class="page-container">
+    <!-- Header -->
+    <header>
+      <h1>AKHAND SHUKLA</h1>
+      <div class="role-title">Software Developer | AI & Full-Stack Engineer</div>
+      <div class="contact-line">
+        <span>Kanpur, Uttar Pradesh, India</span>
+        <span class="sep">|</span>
+        <a href="mailto:akhandshukla784@gmail.com">akhandshukla784@gmail.com</a>
+        <span class="sep">|</span>
+        <span>+91 9129933535</span>
+        <span class="sep">|</span>
+        <a href="https://linkedin.com/in/akhand-shukla-42913b361" target="_blank">linkedin.com/in/akhand-shukla-42913b361</a>
+        <span class="sep">|</span>
+        <a href="https://github.com/Akhand-shukla" target="_blank">github.com/Akhand-shukla</a>
+        <span class="sep">|</span>
+        <a href="https://akhands-animated-art.vercel.app" target="_blank">akhands-animated-art.vercel.app</a>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section>
+      <div class="section-title">Professional Summary</div>
+      <p class="summary-text">
+        Computer Science undergraduate specializing in AI engineering, GenAI, and full-stack development, with hands-on expertise building production-grade web applications, Agentic AI systems (LangChain, LangGraph), and containerized microservices. Proficient in Python, JavaScript, React.js, FastAPI, Docker, and Firebase, with AWS deployment experience and real-world multi-model orchestration. 4th-place finisher at GDG Indore Hackathon 2026 and Smart India Hackathon (SIH) 2026 shortlisted developer passionate about solving real-world civic, environmental, and financial challenges with scalable, intelligent software.
+      </p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section>
+      <div class="section-title">Technical Skills</div>
+      <table class="skills-table">
+        <tr>
+          <td class="skills-label">Programming Languages</td>
+          <td class="skills-value">Python, Java, JavaScript (ES6+), C, SQL, HTML5, CSS3</td>
+        </tr>
+        <tr>
+          <td class="skills-label">Frontend Technologies</td>
+          <td class="skills-value">React.js, Next.js, GSAP (GreenSock Animation Platform), Tailwind CSS, Vite, Redux, Context API</td>
+        </tr>
+        <tr>
+          <td class="skills-label">Backend & APIs</td>
+          <td class="skills-value">FastAPI, Uvicorn, Pydantic, REST APIs, WebSockets, HTTPX, PyJWT</td>
+        </tr>
+        <tr>
+          <td class="skills-label">Cloud, DevOps & Data</td>
+          <td class="skills-value">Firebase (Auth, Firestore, Storage), Docker, AWS (EC2, S3), Git, GitHub, Linux / Bash</td>
+        </tr>
+        <tr>
+          <td class="skills-label">GenAI & Agentic AI</td>
+          <td class="skills-value">Agentic AI (LangChain, LangGraph), Multi-Agent Systems, GenAI, RAG Pipelines, Google Gemini API, Groq API, Prompt Engineering</td>
+        </tr>
+        <tr>
+          <td class="skills-label">Core Computer Science</td>
+          <td class="skills-value">Data Structures & Algorithms (DSA), Object-Oriented Programming (OOP), DBMS, System Design Basics</td>
+        </tr>
+        <tr>
+          <td class="skills-label">Developer Tools</td>
+          <td class="skills-value">VS Code, Postman, npm, Docker Desktop, TestClient</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Projects -->
+    <section>
+      <div class="section-title">Projects</div>
+
+      <!-- Project 1: Jal Sutra -->
+      <div class="project-item">
+        <div class="project-header">
+          <span class="project-title">Jal Sutra — AI-Powered Groundwater Contamination Platform</span>
+          <span class="project-tech">React.js, FastAPI, Python, GenAI, RAG, Docker, Geospatial Mapping</span>
+        </div>
+        <ul class="clean-list">
+          <li>Developed an environmental intelligence platform converting raw groundwater-quality datasets into real-time contamination insights, geospatial heatmaps, and automated hazard alerts.</li>
+          <li>Implemented heavy-metal contamination indexing calculating <strong>Heavy Metal Pollution Index (HPI)</strong>, <strong>Heavy Metal Evaluation Index (HEI)</strong>, and <strong>Contamination Degree (Cd)</strong>.</li>
+          <li>Engineered interactive GIS contamination hotspot maps with location-wise analysis, RAG-driven remediation guidance, and Dockerized microservice deployment.</li>
+        </ul>
+      </div>
+
+      <!-- Project 2: CivicPulse AI -->
+      <div class="project-item">
+        <div class="project-header">
+          <span class="project-title">CivicPulse AI — Civic Demand Intelligence Platform</span>
+          <span class="project-tech">FastAPI, Python, Google Gemini Multimodal API (GenAI), Firebase, Leaflet.js, React.js, Tailwind CSS</span>
+        </div>
+        <ul class="clean-list">
+          <li>Built an intelligent civic demand platform for GDG Indore Hackathon (4th Place) transforming unstructured citizen voice audio, photos, and complaints into standardized ward priorities.</li>
+          <li>Integrated <strong>Google Gemini Multimodal GenAI</strong> to automatically transcribe Hinglish audio complaints, classify issues, score severity (1–5), and validate photographic damage.</li>
+          <li>Developed asynchronous <strong>FastAPI</strong> backend services with <strong>Firebase</strong> real-time sync and interactive <strong>Leaflet.js</strong> map clustering for municipal ward-level hotspot detection.</li>
+        </ul>
+      </div>
+
+      <!-- Project 3: Tarazu (Vakeel Vision) -->
+      <div class="project-item">
+        <div class="project-header">
+          <span class="project-title">Tarazu (Vakeel Vision) — AI Legal Contract Analysis Platform</span>
+          <span class="project-tech">FastAPI, Python, Firebase, Docker, GenAI, Pydantic, HTTPX, Uvicorn</span>
+        </div>
+        <ul class="clean-list">
+          <li>Developed an automated legal intelligence platform analyzing uploaded commercial contracts, clauses, and legal agreements for hidden liabilities and compliance risks.</li>
+          <li>Architected asynchronous REST APIs in <strong>FastAPI</strong> and <strong>Pydantic</strong> for multi-part contract ingestion, asynchronous GenAI analysis execution, and structured result extraction.</li>
+          <li>Containerized backend services with <strong>Docker</strong> and integrated <strong>Firebase</strong> cloud persistence for secure contract storage and real-time audit logs.</li>
+        </ul>
+      </div>
+
+      <!-- Project 4: SurakshaPay (Sentinel-Recover) -->
+      <div class="project-item">
+        <div class="project-header">
+          <span class="project-title">SurakshaPay (Sentinel-Recover) — AI Revenue Recovery Engine</span>
+          <span class="project-tech">React.js, GSAP, Lenis, FastAPI, Python, GenAI (Gemini API), Agentic AI, HMAC SHA-256 Webhooks, Tailwind CSS</span>
+        </div>
+        <ul class="clean-list">
+          <li>Engineered an autonomous payment failure recovery platform intercepting failed Razorpay transactions via HMAC-verified webhooks to recover lost merchant revenue.</li>
+          <li>Built a 5-stage automated recovery pipeline: <strong>HMAC Webhook verification</strong> → Deterministic triage → <strong>TRAI & fraud guardrails</strong> → <strong>Gemini GenAI agent</strong> → <strong>SHA-256 chained audit ledger seal</strong>.</li>
+          <li>Implemented an interactive WhatsApp conversational recovery drawer, ROI calculator, and 60fps kinetic micro-interactions leveraging <strong>GSAP</strong> and <strong>Lenis</strong>.</li>
+          <li>Developed a modular <strong>FastAPI</strong> backend with cryptographic tamper-evident audit logs (<code>ledger.journal</code>) guaranteeing idempotent transaction handling.</li>
+        </ul>
+      </div>
+
+      <!-- Project 5: Model Wars (Shifted to the last project) -->
+      <div class="project-item">
+        <div class="project-header">
+          <span class="project-title">Model Wars — Dual-LLM Agentic Battle Arena</span>
+          <span class="project-tech">Python, React.js, LangChain, LangGraph, Agentic AI, Groq API, Gemini API, Tailwind CSS, Vite</span>
+        </div>
+        <ul class="clean-list">
+          <li>Built an interactive agentic arena pitting autonomous LLM models against each other in competitive prompting duels using <strong>LangGraph</strong> state machines.</li>
+          <li>Implemented multi-model orchestration with <strong>LangChain</strong> routing concurrent prompt execution across <strong>Groq API</strong> (<code>openai/gpt-oss-120b</code>) and <strong>Google Gemini 2.5 Flash</strong>.</li>
+          <li>Designed dynamic combat mech cards, arena standings, and live duel streaming telemetry using <strong>React.js</strong> and <strong>Tailwind CSS</strong>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Achievements & Hackathons -->
+    <section>
+      <div class="section-title">Achievements & Hackathons</div>
+      <div class="achievement-item">
+        • <strong>4th Place — GDG Indore Hackathon 2026</strong> (Team Prompt Pirates): CivicPulse AI multimodal civic intelligence platform.
+      </div>
+      <div class="achievement-item">
+        • <strong>Internally Shortlisted — Smart India Hackathon (SIH) 2026</strong> (Team Prompt Pirates): Jal Sutra groundwater contamination analysis platform.
+      </div>
+      <div class="achievement-item">
+        • <strong>National Hackathon Competitor</strong> — Adobe University Hackathon 2026 (Round 2 Qualifier), Bharatiya Antariksh Hackathon 2026, ViCoDathon 2026, Geeks2Code Hackathon (Agentic AI & Developer Tools).
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <div class="section-title">Education</div>
+      <div class="edu-item">
+        <div>
+          <span class="edu-degree">Bachelor of Technology (B.Tech) — Computer Science & Engineering</span><br>
+          <span class="edu-school">Pranveer Singh Institute of Technology (PSIT), Kanpur — AKTU</span>
+        </div>
+        <span class="edu-year">2025 – 2029</span>
+      </div>
+      <div class="edu-item" style="margin-top: 2.5px;">
+        <div>
+          <span class="edu-degree">Senior Secondary (Class XII) & High School (Class X)</span><br>
+          <span class="edu-school">St. Thomas School, Kanpur</span>
+        </div>
+        <span class="edu-year">Completed</span>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section>
+      <div class="section-title">Certifications</div>
+      <div class="cert-grid">
+        <div class="cert-item">• <strong>OpenAI</strong> — Agents and Workflows</div>
+        <div class="cert-item">• <strong>Anthropic</strong> — AI Fluency: Framework & Foundation</div>
+        <div class="cert-item">• <strong>Anthropic</strong> — Claude Code 101</div>
+        <div class="cert-item">• <strong>Google Cloud</strong> — Generative AI, Intro to LLMs, Responsible AI</div>
+        <div class="cert-item">• <strong>Forage</strong> — Tata GenAI Powered Data Analytics Job Simulation</div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
